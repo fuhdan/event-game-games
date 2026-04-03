@@ -1,0 +1,48 @@
+name: New game
+description: Propose a new game for the Event Game Framework
+title: "[New Game]: "
+labels:
+  - type:feature
+  - area:games
+body:
+  - type: input
+    id: game_name
+    attributes:
+      label: Game name
+      placeholder: memory-match
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the game in a few sentences
+    validations:
+      required: true
+
+  - type: textarea
+    id: gameplay
+    attributes:
+      label: Gameplay
+      description: Explain how the game works
+    validations:
+      required: true
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: Assets and dependencies
+      description: List required assets, libraries, or external dependencies
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing notes
+      description: Explain how the game should be tested
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Add anything else that helps reviewers
